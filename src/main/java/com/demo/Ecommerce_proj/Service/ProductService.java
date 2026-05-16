@@ -13,7 +13,11 @@ public class ProductService {
     @Autowired
     private Productrepo repo;
     public List<Product> getallproducts() {
-       return repo.findAll();
+    return repo.findAll();
     }
-    
+
+    public Product getProductById(int id) {
+        // repo.findById(id) looks inside your H2 database
+        return repo.findById(id).orElse(null); 
+    }
 }

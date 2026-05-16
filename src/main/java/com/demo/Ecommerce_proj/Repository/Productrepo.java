@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import com.demo.Ecommerce_proj.Model.Product;
 @Repository
 public interface Productrepo extends JpaRepository<Product, Integer> {
-    
+
 }

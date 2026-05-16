@@ -22,7 +22,7 @@ public class Product {
     private String brand;
     private int price;
     private String category;
-    private Date releasDate;
+    private Date releaseDate;
     private boolean available;
     private int quantity;
 }
